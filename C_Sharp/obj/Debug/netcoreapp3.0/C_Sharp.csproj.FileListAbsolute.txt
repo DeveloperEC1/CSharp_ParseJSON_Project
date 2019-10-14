@@ -1,0 +1,4 @@
+C:\Users\EliorCohen\Desktop\C_Sharp_Projects\C_Sharp\C_Sharp\bin\Debug\netcoreapp3.0\C_Sharp.exe
+C:\Users\EliorCohen\Desktop\C_Sharp_Projects\C_Sharp\C_Sharp\obj\Debug\netcoreapp3.0\C_Sharp.csprojAssemblyReference.cache
+C:\Users\EliorCohen\Desktop\C_Sharp_Projects\C_Sharp\C_Sharp\obj\Debug\netcoreapp3.0\C_Sharp.AssemblyInfoInputs.cache
+C:\Users\EliorCohen\Desktop\C_Sharp_Projects\C_Sharp\C_Sharp\obj\Debug\netcoreapp3.0\C_Sharp.AssemblyInfo.cs
