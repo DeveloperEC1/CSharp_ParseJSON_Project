@@ -30,7 +30,9 @@ namespace TMDBAppJSONNameSpace
                             {
                                 for (int i = 0; i <= data.Length; i++)
                                 {
-                                    Console.WriteLine("Title: " + JObject.Parse(data)["results"][i]["title"] + ".\nOverview: " + JObject.Parse(data)["results"][i]["overview"] + ".\nVote Average: " + JObject.Parse(data)["results"][i]["vote_average"] + "\n");
+                                    Console.WriteLine("Title: " + JObject.Parse(data)["results"][i]["title"] +
+                                                      ".\nOverview: " + JObject.Parse(data)["results"][i]["overview"] +
+                                                      ".\nVote Average: " + JObject.Parse(data)["results"][i]["vote_average"] + "\n");
                                 }
                             }
                             else
