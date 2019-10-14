@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Net.Http;
 
@@ -15,7 +15,7 @@ namespace TMDBAppJSONNameSpace
 
         public static async void TMDBAppParseJSON()
         {
-            string API_KEY = "";
+            string API_KEY = "4e0be2c22f7268edffde97481d49064a";
             string baseUrl = "https://api.themoviedb.org/3/search/movie?/&query=Movie&api_key=" + API_KEY + "&language=en-US";
             try
             {
@@ -26,18 +26,18 @@ namespace TMDBAppJSONNameSpace
                         using (HttpContent content = res.Content)
                         {
                             var data = await content.ReadAsStringAsync();
-                            if (content != null)
+                            if (data != null)
                             {
-                                for (int i = 0; i <= data.Length; i++)
+                                for (int i = 0; i < data.Length; i++)
                                 {
                                     Console.WriteLine("Title: " + JObject.Parse(data)["results"][i]["title"] +
-                                                      ".\nOverview: " + JObject.Parse(data)["results"][i]["overview"] +
-                                                      ".\nVote Average: " + JObject.Parse(data)["results"][i]["vote_average"] + "\n");
+                                        ".\nOverview: " + JObject.Parse(data)["results"][i]["overview"] + ".\nVote Average: " +
+                                        JObject.Parse(data)["results"][i]["vote_average"] + "\n");
                                 }
                             }
                             else
                             {
-                                Console.WriteLine("NO Data----------");
+                                Console.WriteLine("NO Data...");
                             }
                         }
                     }
@@ -45,7 +45,7 @@ namespace TMDBAppJSONNameSpace
             }
             catch (Exception exception)
             {
-                Console.WriteLine("Exception Hit------------");
+                Console.WriteLine("Exception Hit...");
                 Console.WriteLine(exception);
             }
         }
