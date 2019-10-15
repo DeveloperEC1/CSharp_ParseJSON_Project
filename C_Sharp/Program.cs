@@ -16,7 +16,9 @@ namespace TMDBAppJSONNameSpace
         public static async void TMDBAppParseJSON()
         {
             string API_KEY = "";
-            string baseUrl = "https://api.themoviedb.org/3/search/movie?/&query=Movie&api_key=" + API_KEY + "&language=en-US";
+            string baseUrl = "https://api.themoviedb.org/3/search/movie?/&query=Movie&api_key="
+                             + API_KEY + 
+                             "&language=en-US";
             try
             {
                 using (HttpClient client = new HttpClient())
